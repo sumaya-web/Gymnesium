@@ -41,3 +41,64 @@ li {
     margin: 0;
 }
 /* Todo => ||||||||||||||||||||| Common CSS End   ||||||||||||||||||||| */
+
+/* Todo => |||||||||||||||||||| Menu Part CSS Start ||||||||||||||||||| */
+.menu_part {
+    height: 50px;
+    background: rgba(53, 53, 53, 0.225);
+
+    /* ! [banner-position: relative] To set the menu over the banner */
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    z-index: 999;
+}
+
+.menu_part .navbar-brand {
+    width: 245px;
+    height: 70px;
+    background: #323232;
+    text-align: center;
+    padding-top: 10px !important;
+    transform: skewX(-45deg);
+}
+
+.menu_part .navbar-brand img {
+    width: initial;
+    transform: skewX(45deg);
+}
+
+.menu_part .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    color: #f1f1f1;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 0 10px;
+    line-height: 50px;
+    transition: all linear 0.4s;
+    position: relative;
+}
+
+.menu_part .navbar-nav .nav-item .nav-link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #e23e38;
+    transition: all linear 0.4s;
+}
+
+.menu_part .navbar-nav .nav-item .nav-link:hover {
+    color: #222222;
+    background: #ffffff;
+}
+
+.menu_part .navbar-nav .nav-item .nav-link:hover:after {
+    width: 100%;
+}
+/* Todo => |||||||||||||||||||| Menu Part CSS End   ||||||||||||||||||| */
