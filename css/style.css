@@ -102,3 +102,220 @@ li {
     width: 100%;
 }
 /* Todo => |||||||||||||||||||| Menu Part CSS End   ||||||||||||||||||| */
+
+/* Todo => ||||||||||||||||||| Banner Part CSS Start |||||||||||||||||| */
+.banner_item {
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 254px 0 116px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_item::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.banner_text h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.banner_text h1 {
+    color: #e23e38;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 12px 0 18px;
+}
+
+.banner_text p {
+    color: #dddddd;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 18px;
+}
+
+.banner_text a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 1px solid #f1f1f1;
+    transition: all linear 0.2s;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.banner_text a:last-child {
+    margin-right: 0;
+}
+
+.banner_text a:hover {
+    background: #e23e38;
+    border-color: #e23e38;
+}
+
+.banner_text h3,
+h1,
+p {
+    position: relative;
+}
+
+.banner_text h3::before {
+    position: absolute;
+    content: '';
+    left: 50px;
+    top: 20px;
+    width: 164px;
+    height: 3px;
+    background: #e23e38;
+    clip-path: polygon(0 1%, 100% 0%, 96% 100%, 0% 100%);
+}
+
+.banner_text h3::after {
+    position: absolute;
+    content: '';
+    right: 45px;
+    top: 20px;
+    width: 110px;
+    height: 3px;
+    background: #e23e38;
+    clip-path: polygon(0 1%, 100% 0%, 100% 100%, 4% 100%);
+}
+
+.banner_text h1::before {
+    position: absolute;
+    content: '';
+    left: 50px;
+    top: -15px;
+    width: 3px;
+    height: 200px;
+    background: #e23e38;
+}
+
+.banner_text h1::after {
+    position: absolute;
+    content: '';
+    right: 45px;
+    top: -15px;
+    width: 3px;
+    height: 200px;
+    background: #e23e38;
+}
+
+.banner_text p::before {
+    position: absolute;
+    content: '';
+    left: 50px;
+    bottom: -50px;
+    width: 62px;
+    height: 3px;
+    background: #e23e38;
+}
+
+.banner_text p::after {
+    position: absolute;
+    content: '';
+    right: 45px;
+    bottom: -50px;
+    width: 38px;
+    height: 3px;
+    background: #e23e38;
+}
+
+/* Todo: Set display-none of banner_text h1,h3,p after-before for other 2 banner-slider */
+#banner_text_before_after_none h1:after,
+#banner_text_before_after_none h1:before,
+#banner_text_before_after_none h3:after,
+#banner_text_before_after_none h3:before,
+#banner_text_before_after_none p:after,
+#banner_text_before_after_none p:before {
+    display: none;
+}
+
+/* Todo: Banner slider 'dots' css */
+#banner_part .slick-dots {
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 33px;
+    transform: translate(-50%);
+}
+
+#banner_part .slick-dots > li > button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background: transparent;
+}
+
+#banner_part .slick-dots > li.slick-active > button {
+    width: 20px;
+    height: 20px;
+    background: #e23e38;
+    border-color: #e23e38;
+}
+
+/* Todo: Banner slider 'arrow' css */
+.prev_arrow {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translate(-50%);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    z-index: 999;
+    transition: all linear 0.3s;
+}
+
+.prev_arrow:hover {
+    color: #e23e38;
+    border-color: #e23e38;
+}
+
+.next_arrow {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(-50%);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    z-index: 999;
+    transition: all linear 0.3s;
+}
+
+.next_arrow:hover {
+    color: #e23e38;
+    border-color: #e23e38;
+}
+
+/* Todo => ||||||||||||||||||| Banner Part CSS End   |||||||||||||||||| */
