@@ -1,7 +1,43 @@
-h1 {
-    font-size: large;
-    font-weight: 400;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transform: translate(-50%, -50%);
+/* Todo => ||||||||||||||||||||| Common CSS Start ||||||||||||||||||||| */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+ul,
+ol,
+li {
+    padding: 0;
+    margin: 0;
+}
+/* Todo => ||||||||||||||||||||| Common CSS End   ||||||||||||||||||||| */
