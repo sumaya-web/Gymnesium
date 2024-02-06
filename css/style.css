@@ -319,3 +319,68 @@ p {
 }
 
 /* Todo => ||||||||||||||||||| Banner Part CSS End   |||||||||||||||||| */
+
+/* Todo => ||||||||||||||||||| About Part CSS Start  |||||||||||||||||| */
+#about_part {
+    padding: 80px;
+}
+
+.about_video {
+    position: relative;
+}
+
+.about_video .overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.about_video .overly a {
+    background: #e23e38;
+    color: #1e1b20;
+    font-size: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.about_video .overly a:hover {
+    background: #f1f1f1;
+}
+
+.about_text h2 {
+    color: #222222;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.about_text img {
+    width: initial;
+    margin: 5px 0 18px;
+}
+
+.about_text p {
+    color: #444444;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
+
+.about_text p > span {
+    padding-top: 1.5rem;
+}
+/* Todo => ||||||||||||||||||| About Part CSS End    |||||||||||||||||| */

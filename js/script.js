@@ -11,4 +11,11 @@ $(function () {
         prevArrow: '<i class="fa-solid fa-angle-left prev_arrow"></i>',
         nextArrow: '<i class="fa-solid fa-angle-right next_arrow"></i>'
     });
+
+    // Todo: [About video section] VenoBox activation codez
+    new VenoBox({
+        selector: '.video-link',
+        ratio: '4x3',
+        spinner: 'wander'
+    });
 })
