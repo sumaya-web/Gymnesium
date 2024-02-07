@@ -12,10 +12,17 @@ $(function () {
         nextArrow: '<i class="fa-solid fa-angle-right next_arrow"></i>'
     });
 
-    // Todo: [About video section] VenoBox activation codez
+    // Todo: [About video section] VenoBox (for video) activation code
     new VenoBox({
         selector: '.video-link',
         ratio: '4x3',
         spinner: 'wander'
+    });
+
+    // Todo [Gallery banner section] VenBox (for gallery images) activation code
+    new VenoBox({
+        selector: '.img-link',
+        numeration: true,
+        spinner: 'grid'
     });
 })
