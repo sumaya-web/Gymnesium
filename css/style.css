@@ -651,9 +651,9 @@ p {
 }
 
 .membership_item .membership_banner {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     padding: 36px 0;
 }
 
@@ -698,3 +698,47 @@ p {
 }
 
 /* Todo => ||||||||||||||||||| Membership Part CSS End    ||||||||||||| */
+
+/* Todo => ||||||||||||||||||| Counter Part CSS Start     ||||||||||||| */
+#counter_part {
+    padding: 45px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    position: relative;
+    z-index: 1;
+}
+
+#counter_part::after {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#counter_part ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#counter_part ul li h3 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+
+#counter_part ul li span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+/* Todo => ||||||||||||||||||| Counter Part CSS End       ||||||||||||| */

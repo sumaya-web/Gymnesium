@@ -35,4 +35,10 @@ $(function () {
         dots: true,
         arrows: false
     });
+
+    // Todo: Counter up activation code
+    $(".counter").counterUp({
+        delay: 10,
+        time: 1000,
+    });
 })
