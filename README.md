@@ -27,6 +27,34 @@ To set our own `Prettier` styling in our project we need to create a file named 
 "arrowParens": "avoid"
 ```
 
-[Learn Prettier](https://prettier.io/docs/en/)  
-[Prettier Configuration](https://prettier.io/docs/en/configuration)  
+[Learn Prettier](https://prettier.io/docs/en/)
+[Prettier Configuration](https://prettier.io/docs/en/configuration)
 [Prettier Styling Options](https://prettier.io/docs/en/options)
+
+### Responsive Media Breakpoints [Typical Device Breakpoints]
+
+``` css
+@media (max-width: 1400px) {
+    /* xxl */
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    /* xl device */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* lg device */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* md device */
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* sm device */
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+    /* xs device */
+}
+```
