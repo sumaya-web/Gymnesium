@@ -41,4 +41,15 @@ $(function () {
         delay: 10,
         time: 1000,
     });
+
+    // Todo: Class bottom slider
+    $('.class_bottom').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        prevArrow: '<i class="fa-solid fa-chevron-left clsPrevArrow"></i>',
+        nextArrow: '<i class="fa-solid fa-chevron-right clsNextArrow"></i>'
+    });
 })

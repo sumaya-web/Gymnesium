@@ -742,3 +742,135 @@ p {
     font-family: 'Oswald', sans-serif;
 }
 /* Todo => ||||||||||||||||||| Counter Part CSS End       ||||||||||||| */
+
+/* Todo => ||||||||||||||||||| Class Part CSS Start       ||||||||||||| */
+#class_part {
+    padding: 80px 0;
+}
+
+.class_menu {
+    background-color: #f1f1f1;
+    margin-top: 12px;
+    justify-content: space-around;
+}
+
+.class_menu .nav-link {
+    padding: 10px 85px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+    border-radius: 0;
+}
+
+.class_menu .nav-link.active,
+.class_menu .show > .nav-link {
+    color: #fff;
+    background-color: #e23e38;
+}
+
+/* .class_menu .nav-link:hover {
+    color: #fff !important;
+    background-color: #e23e38;
+} */
+
+.class_content ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-top: 16px;
+}
+
+.class_content ul > li {
+    padding: 50px;
+    flex-basis: 19.69%;
+    background-color: #f1f1f1;
+    transition: all linear 0.4s;
+}
+
+.class_content ul li:hover {
+    background-color: #e23e38;
+    transform: translateY(-3px);
+}
+
+.class_content ul li > h5 {
+    color: #222222;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    transition: all linear 0.4s;
+}
+
+.class_content ul li:hover h5 {
+    color: #111;
+    font-weight: 600;
+}
+
+.class_content ul li > img {
+    margin: 10px 0 5px;
+    width: 50px !important;
+    height: 50px;
+}
+
+.class_content ul li > p {
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    transition: all linear 0.4s;
+}
+
+.class_content ul li:hover p {
+    color: #222;
+    font-weight: 500;
+}
+
+.class_bottom a {
+    background-color: #f1f1f1;
+    border: 1px solid transparent;
+    margin-top: 80px;
+    width: 90% !important;
+    transition: all linear 0.4s;
+}
+
+.class_bottom a:hover {
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 0 3px 0 #dfdfdf;
+}
+
+/* Todo: Class bottom part slider 'arrow' css */
+.class_bottom {
+    position: relative;
+}
+
+.clsPrevArrow {
+    position: absolute;
+    left: -30px;
+    top: 65%;
+    color: #444444;
+    font-size: 26px;
+    z-index: 999;
+    transition: all linear 0.3s;
+}
+
+.clsPrevArrow:hover {
+    color: #e23e38;
+}
+
+.clsNextArrow {
+    position: absolute;
+    right: -30px;
+    top: 65%;
+    font-size: 26px;
+    color: #444444;
+    z-index: 999;
+    transition: all linear 0.3s;
+}
+
+.clsNextArrow:hover {
+    color: #e23e38;
+}
+
+/* Todo => ||||||||||||||||||| Class   Part CSS End       ||||||||||||| */
